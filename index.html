@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>DevDeived</title>
+  </head>
+  <body>
+    <div class="container" id="home">
+      <nav>
+        <h2 class="portfolio">Portfo<span>lio</span></h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Fale comigo</a></li>
+        </ul>
+      </nav>
+
+      <div class="meu-nome">
+        <h1>Deived <span>Benício</span></h1>
+        <h3>Programador FullStack</h3>
+      </div>
+    </div>
+
+    <section id="sobre">
+      <img src="./img/deived2.png" alt="" />
+      <div>
+        <h2>Sobre mim</h2>
+        <p>
+          Sou um desenvolvedor Full Stack apaixonado por tecnologia e por
+          transformar ideias em projetos reais. Tenho experiência criando
+          aplicações modernas e responsivas utilizando HTML, CSS e JavaScript,
+          sempre com atenção aos detalhes e foco em uma boa experiência do
+          usuário. No front-end, trabalho com React, desenvolvendo interfaces
+          dinâmicas e intuitivas. No back-end, utilizo Node.js para construir
+          APIs e funcionalidades robustas que dão vida às aplicações. Estou em
+          transição de carreira e construindo meu portfólio com projetos que
+          mostram minha evolução, criatividade e dedicação. Gosto de aprender,
+          colaborar e enfrentar novos desafios que me façam crescer como
+          profissional e desenvolvedor.
+        </p>
+        <p>
+          Confira meus projetos e, se quiser conversar ou colaborar em alguma
+          ideia, entre em contato comigo! Será um prazer compartilhar
+          conhecimento e construir algo incrível juntos.
+        </p>
+        <button>Entre em Contato</button>
+      </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="./img/ladingpage.png" alt="LadingPage" />
+          <div class="card-content">
+            <h3>LadingPage</h3>
+            <p>
+              Desenvolvi uma landing page moderna e responsiva utilizando HTML,
+              CSS e JavaScript, com foco em design atraente, navegação intuitiva
+              e boa experiência do usuário em todos os dispositivos..
+            </p>
+            <div class="card-buttons">
+              <a
+                href="https://devdeived.github.io/ladingpage06/"
+                target="_blank"
+                >Projeto</a
+              >
+              <a
+                href="https://github.com/DevDeived/ladingpage06/"
+                target="_blank"
+                >Repositório</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./img/ladingpage07.png" alt="Ladin Pages 07" />
+          <div class="card-content">
+            <h3>Ladin Pages 07</h3>
+            <p>
+              Desenvolvi uma landing page moderna e responsiva utilizando HTML,
+              CSS e JavaScript, com foco em design atraente, navegação intuitiva
+              e boa experiência do usuário em todos os dispositivos..
+            </p>
+            <div class="card-buttons">
+              <a
+                href="https://devdeived.github.io/LandingPage07/"
+                target="_blank"
+                >Projeto</a
+              >
+              <a
+                href="https://github.com/DevDeived/LandingPage07"
+                target="_blank"
+                >Repositório</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./img/mundo das lingeries.png" alt="Mundo das licngeries" />
+          <div class="card-content">
+            <h3>Mundo das Lingeries</h3>
+            <p>
+              Meu primeiro projeto desenvolvido com HTML, CSS e JavaScript, onde
+              apliquei sozinho os conceitos básicos para criar uma página com
+              estilo e interatividade.
+            </p>
+            <div class="card-buttons">
+              <a
+                href="https://devdeived.github.io/mundodaslingeries/"
+                target="_blank"
+                >Projeto</a
+              >
+              <a
+                href="https://github.com/DevDeived/mundodaslingeries"
+                target="_blank"
+                >Repositório</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <p>
+        Entre em contato comigo pelo WhatsApp preenchendo o formulário abaixo:
+      </p>
+      <form id="form-contato" onsubmit="enviarwhats(event)">
+        <input type="text" id="nome" placeholder="Seu nome" required />
+        <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/deived-ben%C3%ADcio-23323619a/"
+          target="_blank"
+          class="icon-linkedin"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/devdeived/"
+          target="_blank"
+          class="icon-instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://github.com/DevDeived"
+          target="_blank"
+          class="icon-github"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </section>
+    
+    <script >
+
+      function enviarwhats(event) {
+        event.preventDefault()
+        
+        const nome = document.getElementById("nome").value;
+        const mensagem = document.getElementById("mensagem").value;
+        const telefone ='5585991844043';
+  
+        const texto  = `Olá! me chamo ${nome}, ${mensagem}`
+        const msgFormatada = encodeURIComponent(texto)
+        const url = `https://wa.me/5585991844043?text=${msgFormatada}`;
+  
+        window.open(url, '_blank')
+      }
+    </script>
+  </body>
+</html>
