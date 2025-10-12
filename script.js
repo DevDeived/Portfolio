@@ -1,26 +1,26 @@
 const projetos = [
   {
-    titulo: "E-commerce Lingerie",
+    titulo: "LadingPage",
     descricao:
-      "CRUD completo com autenticação, carrinho e painel admin (React + Node + MongoDB).",
-    imagem: "./img/loja.png",
-    demo: "#",
-    repo: "#",
+      " CSS e JavaScript, com foco em design atraente, navegação intuitiva e boa experiência do usuário em todos os dispositivos..",
+    imagem: "./img/ladingpage.png",
+    projeto: "https://devdeived.github.io/ladingpage06/",
+    repo: "https://github.com/DevDeived/ladingpage06/",
   },
   {
-    titulo: "Sistema de Agendamento",
+    titulo: "Ladin Pages 07",
     descricao:
-      "Agendamento para pequenos negócios com painel e relatórios completos.",
-    imagem: "./img/agendamento.png",
-    demo: "#",
-    repo: "#",
+      "Desenvolvi uma landing page moderna e responsiva utilizando HTML, CSS e JavaScript, com foco em design atraente, navegação intuitiva e boa experiência do usuário em todos os dispositivos..",
+    imagem: "./img/ladingpage07.png",
+    projeto: "https://devdeived.github.io/LandingPage07",
+    repo: "https://github.com/DevDeived/LandingPage07",
   },
   {
-    titulo: "Portfolio Pessoal",
-    descricao: "Meu portfolio pessoal com projetos, sobre mim e contato.",
-    imagem: "./img/portfolio.png",
-    demo: "#",
-    repo: "#",
+    titulo: "Mundo das licngeries",
+    descricao: "MMeu primeiro projeto desenvolvido com HTML, CSS e JavaScript, onde apliquei sozinho os conceitos básicos para criar uma página com estilo e interatividade.",
+    imagem: "./img/mundo das lingeries.png",
+    projeto: "https://devdeived.github.io/mundodaslingeries/",
+    repo: "https://github.com/DevDeived/mundodaslingeries",
   },
 ];
 
@@ -36,7 +36,7 @@ projetos.forEach((projeto) => {
       <h3>${projeto.titulo}</h3>
       <p>${projeto.descricao}</p>
       <div class="card-buttons">
-        <a href="${projeto.demo}" target="_blank">Ver Demo</a>
+        <a href="${projeto.projeto}" target="_blank">Ver Demo</a>
         <a href="${projeto.repo}" target="_blank">Repositório</a>
       </div>
     </div>
