@@ -24,6 +24,11 @@
     <div class="container" id="home">
       <nav>
         <h2 class="portfolio">Portfo<span>lio</span></h2>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#sobre">Sobre</a></li>
@@ -32,9 +37,14 @@
         </ul>
       </nav>
 
-      <div class="meu-nome">
-        <h1>Deived <span>Benício</span></h1>
-        <h3>Programador FullStack</h3>
+      <div id="perfil">
+        <div class="meu-nome">
+          <h1>Deived <span>Benício</span></h1>
+          <h3>Programador FullStack</h3>
+        </div>
+        <div class="perfil">
+          <img src="./img/deived.png" alt="" />
+        </div>
       </div>
     </div>
 
@@ -60,7 +70,9 @@
           ideia, entre em contato comigo! Será um prazer compartilhar
           conhecimento e construir algo incrível juntos.
         </p>
-        <button>Entre em Contato</button>
+        <a href="./docs/curriculo (2).pdf" download="btn"
+          ><button>Baixar Currículo</button></a
+        >
       </div>
     </section>
 
@@ -176,22 +188,30 @@
         </a>
       </div>
     </section>
-    
-    <script >
 
+    <script>
       function enviarwhats(event) {
-        event.preventDefault()
-        
+        event.preventDefault();
+
         const nome = document.getElementById("nome").value;
         const mensagem = document.getElementById("mensagem").value;
-        const telefone ='5585991844043';
-  
-        const texto  = `Olá! me chamo ${nome}, ${mensagem}`
-        const msgFormatada = encodeURIComponent(texto)
+        const telefone = "5585991844043";
+
+        const texto = `Olá! me chamo ${nome}, ${mensagem}`;
+        const msgFormatada = encodeURIComponent(texto);
         const url = `https://wa.me/5585991844043?text=${msgFormatada}`;
-  
-        window.open(url, '_blank')
+
+        window.open(url, "_blank");
       }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector("nav ul");
+
+        menuToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("active");
+        });
+      });
     </script>
   </body>
 </html>

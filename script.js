@@ -1,30 +1,32 @@
 const projetos = [
   {
     titulo: "E-commerce Lingerie",
-    descricao: "CRUD completo com autenticação, carrinho e painel admin (React + Node + MongoDB).",
+    descricao:
+      "CRUD completo com autenticação, carrinho e painel admin (React + Node + MongoDB).",
     imagem: "./img/loja.png",
     demo: "#",
-    repo: "#"
+    repo: "#",
   },
   {
     titulo: "Sistema de Agendamento",
-    descricao: "Agendamento para pequenos negócios com painel e relatórios completos.",
+    descricao:
+      "Agendamento para pequenos negócios com painel e relatórios completos.",
     imagem: "./img/agendamento.png",
     demo: "#",
-    repo: "#"
+    repo: "#",
   },
   {
     titulo: "Portfolio Pessoal",
     descricao: "Meu portfolio pessoal com projetos, sobre mim e contato.",
     imagem: "./img/portfolio.png",
     demo: "#",
-    repo: "#"
-  }
+    repo: "#",
+  },
 ];
 
 const container = document.getElementById("cards-container");
 
-projetos.forEach(projeto => {
+projetos.forEach((projeto) => {
   const card = document.createElement("div");
   card.classList.add("card");
 
@@ -42,7 +44,3 @@ projetos.forEach(projeto => {
 
   container.appendChild(card);
 });
-
-
-
-

@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,14 +12,13 @@ html {
 .container {
   height: 100vh;
   width: 100%;
-  background-image: url(./img/deived.png);
-  background-repeat: no-repeat;        
-  background-size: 40% auto;       
+  background-repeat: no-repeat;
+  background-size: 40% auto;
   background-position: right 50px top 100px;
   background-color: #191919;
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,14 +27,57 @@ nav{
   padding-top: 25px;
 }
 
-nav li a{
+nav li a {
   color: white;
   text-decoration: none;
 }
 
-nav li a:hover{
+nav li a:hover {
   color: #f9004d;
   transition: all 0.5s;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #191919;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15px;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  nav ul.active {
+    transform: translateY(0);
+  }
+
+  .menu-toggle {
+    display: flex;
+    cursor: pointer;
+  }
 }
 
 .portfolio {
@@ -56,19 +98,76 @@ li {
   cursor: pointer;
 }
 
-li:hover{
+li:hover {
   color: #f9004d;
   transition: 0.5s;
 }
 
 .meu-nome {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 60%;
   left: 10%;
   transform: translateY(-50%);
 }
 
-h1{
+#perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.meu-nome h1 {
+  color: white;
+  font-size: 75px;
+}
+
+.meu-nome h1 span {
+  color: #f9004d;
+}
+
+.meu-nome h3 {
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.perfil img {
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  #perfil {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 20px;
+  }
+
+  .meu-nome {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+
+  .meu-nome h1 {
+    font-size: 25px;
+  }
+
+  .meu-nome h3 {
+    font-size: 14px;
+  }
+
+  .perfil img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+  }
+}
+
+h1 {
   color: white;
   font-size: 75px;
 }
@@ -82,7 +181,7 @@ h1 span {
   font-size: 25px;
 }
 
-section{
+section {
   display: flex;
   align-items: center;
   padding: 60px 15px;
@@ -118,7 +217,7 @@ button {
   cursor: pointer;
 }
 
-button:hover{
+button:hover {
   background-color: #000000;
   border: 3px solid #f9004d;
   transition: 0.5s;
@@ -136,17 +235,17 @@ button:hover{
   font-size: 75px;
   margin-bottom: 50px;
   color: #ffffff;
-  text-align: center; /* centraliza o título */
+  text-align: center;
 }
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(3, 2fr); 
-  gap: 30px;                        
+  grid-template-columns: repeat(3, 2fr);
+  gap: 30px;
   justify-items: center;
   align-items: start;
   margin: 0 auto;
-  max-width: 1200px;                   
+  max-width: 1200px;
 }
 
 .card {
@@ -162,8 +261,8 @@ button:hover{
 }
 
 .card:hover {
-  transform: translateY(-15px) scale(1.03); 
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); 
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
 .card img {
@@ -214,22 +313,20 @@ button:hover{
   border: 3px solid #f9004d;
 }
 
-
-/* RESPONSIVIDADE */
 @media (max-width: 1200px) {
   .container {
     background-size: 35% auto;
     background-position: right 30px top 80px;
   }
-  
+
   .meu-nome h1 {
     font-size: 60px;
   }
-  
+
   .meu-nome h3 {
     font-size: 20px;
   }
-  
+
   .projetos h2 {
     font-size: 50px;
   }
@@ -308,7 +405,6 @@ button:hover{
   gap: 40px;
 }
 
-/* Parágrafo à esquerda */
 .contato p {
   flex: 1;
   font-size: 22px;
@@ -328,7 +424,6 @@ button:hover{
 
 #form-contato input,
 #form-contato textarea {
-  
   padding: 12px;
   font-size: 16px;
   border: none;
@@ -336,7 +431,6 @@ button:hover{
   outline: none;
   background-color: #333;
   color: #fff;
-
 }
 
 #form-contato textarea {
@@ -365,21 +459,39 @@ button:hover{
   border: 2px solid #f9004d;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .contato-content {
+    display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
+  .contato h2,
   .contato p {
     text-align: center;
+    width: 100%;
   }
 
   #form-contato {
     width: 100%;
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #form-contato input,
+  #form-contato textarea {
+    width: 80%;
+  }
+
+  #form-contato button {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
   }
 }
 
@@ -390,7 +502,6 @@ button:hover{
   margin-top: 30px;
 }
 
-
 .social-icons a {
   display: inline-block;
   width: 50px;
@@ -399,23 +510,29 @@ button:hover{
   text-align: center;
   border-radius: 50%;
   font-size: 24px;
-  background-color: #191919; 
+  background-color: #191919;
   color: #f9004d;
   transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
   transform: scale(1.2);
-  color: #fff; 
+  color: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .icon-linkedin:hover {
-  background-color: #0077B5; 
+  background-color: #0077b5;
 }
 
 .icon-instagram:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
 }
 
 .icon-github:hover {
