@@ -199,8 +199,9 @@ section {
 section img {
   height: 400px;
   border-radius: 100%;
-  border: 3px solid #f9004d;
+  border: 2px solid #f9004d;
   margin-right: 30px;
+  margin-left: 20px
 }
 
 section div h2 {
@@ -209,9 +210,9 @@ section div h2 {
 }
 
 section div p {
-  color: #dac1c9;
+  color: white;
   text-align: justify;
-  margin: 25px;
+  margin: 35px 60px 35px 0;
 }
 
 button {
