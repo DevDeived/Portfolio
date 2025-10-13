@@ -295,6 +295,7 @@ button:hover {
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 20px;
+  margin-top: 3vh;
 }
 
 .card-content {
