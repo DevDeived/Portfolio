@@ -59,15 +59,12 @@ nav li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: right;
     position: absolute;
     top: 70px;
-    left: 0;
-    right: 0;
+    right: 5px;
     background-color: #191919;
     opacity: 70%;
-    padding: 20px 0;
-    gap: 15px;
     transform: translateY(-200%);
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
@@ -112,10 +109,13 @@ li:hover {
 }
 
 .meu-nome {
-  position: relative;
-  top: 60%;
-  left: 10%;
-  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  margin-left: 40px;
+  width: 50%;
 }
 
 #perfil {
@@ -123,6 +123,7 @@ li:hover {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .meu-nome h1 {
@@ -134,10 +135,19 @@ li:hover {
   color: #f9004d;
 }
 
+.meu-nome p {
+  width: 77%;
+  color: white;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
 .meu-nome h3 {
+  width: 77%;
   color: white;
   font-size: 25px;
   margin-top: 10px;
+  
 }
 
 .perfil img {
@@ -158,6 +168,10 @@ li:hover {
     position: static;
     transform: none;
     text-align: center;
+  }
+
+  .meu-nome p{
+  display: none;
   }
 
   .meu-nome h1 {
@@ -265,7 +279,7 @@ button:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s, box-shadow 0.3s;
   width: 100%;
-  max-width: 250px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
 }
@@ -276,7 +290,7 @@ button:hover {
 }
 
 .card img {
-  width: 100%;
+  width: 88%;
   height: 30%;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -289,6 +303,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 .card-content h3 {
@@ -360,7 +375,7 @@ button:hover {
   }
 
   section img {
-    margin: 0 0 30px 0;
+    margin: 0 0 30px 20px;
     height: 350px;
   }
 
