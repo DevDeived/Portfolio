@@ -168,8 +168,7 @@ li:hover {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 60px 20px;
+    padding: 10px 20px;
   }
 
   .meu-nome {
@@ -183,7 +182,8 @@ li:hover {
   }
 
   .meu-nome h1 {
-    font-size: 25px;
+    font-size: 20px;
+    margin-top: -100px;
   }
 
   .meu-nome h3 {
@@ -358,7 +358,7 @@ button:hover {
 @media (max-width: 1200px) {
   .container {
     background-size: 35% auto;
-    background-position: right 30px top 80px;
+    background-position: right 30px top 50px;
     
   }
 
@@ -607,6 +607,7 @@ button:hover {
   font-size: 3rem;
   margin-bottom: 30px;
   color: #fff;
+  margin-top: 50px;
 }
 
 /* Grade de ícones */
