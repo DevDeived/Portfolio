@@ -89,7 +89,6 @@ nav li a:hover {
   }
 }
 
-
 .portfolio {
   color: #ffffff;
   font-size: 40px;
@@ -129,7 +128,6 @@ li:hover {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 .meu-nome h1 {
@@ -153,7 +151,6 @@ li:hover {
   color: white;
   font-size: 25px;
   margin-top: 10px;
-  
 }
 
 .perfil img {
@@ -177,8 +174,8 @@ li:hover {
     text-align: center;
   }
 
-  .meu-nome p{
-  display: none;
+  .meu-nome p {
+    display: none;
   }
 
   .meu-nome h1 {
@@ -216,17 +213,16 @@ section {
   align-items: center;
   padding: 60px 15px;
   background-color: #000000;
-  
 }
 
 section img {
   height: 400px;
   border-radius: 100%;
   margin-right: 30px;
-  margin-left: 20px
+  margin-left: 20px;
 }
 
-section div{
+section div {
   margin-top: 12vh;
 }
 
@@ -264,7 +260,6 @@ button:hover {
   color: #ffffff;
   padding: 60px 30px 80px 30px;
   text-align: center;
-  
 }
 
 .projetos h2 {
@@ -277,7 +272,7 @@ button:hover {
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   justify-items: center;
   align-items: start;
@@ -295,6 +290,8 @@ button:hover {
   max-width: 300px;
   display: flex;
   flex-direction: column;
+  min-height: 400px; /* altura uniforme */
+  transform: translateZ(0); /* melhora performance e evita repintura */
 }
 
 .card:hover {
@@ -317,7 +314,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 .card-content h3 {
@@ -348,18 +344,18 @@ button:hover {
   border-radius: 8px;
   font-weight: 600;
   transition: background 0.3s;
+  border: 1px solid transparent;
 }
 
 .card-buttons a:hover {
   background-color: #000000;
-  border: 3px solid #f9004d;
+  border: 1px solid #f9004d;
 }
 
 @media (max-width: 1200px) {
   .container {
     background-size: 35% auto;
     background-position: right 30px top 50px;
-    
   }
 
   .meu-nome h1 {
@@ -373,7 +369,7 @@ button:hover {
   .projetos h2 {
     font-size: 50px;
   }
-  p{
+  p {
     font-size: 20px;
   }
 }
@@ -393,7 +389,7 @@ button:hover {
     height: 350px;
   }
 
-  P{
+  P {
     width: 100%;
     padding: 20px;
   }
