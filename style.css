@@ -314,26 +314,29 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-height: 350px;
 }
 
 .card-content h3 {
   color: #f9004d;
   margin-bottom: 10px;
   font-size: 22px;
+  margin-top: auto;
 }
 
 .card-content p {
   color: #ccc;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   flex: 1;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .card-buttons {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  margin-top: auto;
 }
 
 .card-buttons a {
